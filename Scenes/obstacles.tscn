@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqmf73jbqc58e"]
+
+[ext_resource type="Script" uid="uid://c503uw0nputel" path="res://Scripts/obstacles.gd" id="1_c56vb"]
+[ext_resource type="AudioStream" uid="uid://bfdsq13258vw1" path="res://Music/damage.mp3" id="2_q1ohc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c56vb"]
+
+[node name="Obstacles" type="Area3D"]
+script = ExtResource("1_c56vb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.607381, 0)
+shape = SubResource("BoxShape3D_c56vb")
+
+[node name="Sounds" type="Node3D" parent="."]
+
+[node name="DamageSFX" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("2_q1ohc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=4 uid="uid://b71n1b8mkppvq"]
+
+[ext_resource type="Texture2D" uid="uid://c6r5tm07u0m3d" path="res://Resources/Obstacles/palette.png" id="1_friuy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4dwsp"]
+albedo_texture = ExtResource("1_friuy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5664i"]
+resource_name = "Non Metallic"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nlnsx"]
+_surfaces = [{
+"aabb": AABB(-0.00188104, -0.000699554, -6.77568e-05, 0.00449517, 0.00326504, 0.00279117),
+"format": 34359742465,
+"index_count": 78,
+"index_data": PackedByteArray("AAABAAIAAgABAAsACwABAAQAAgAHAAAABAAMAAsABwACAA0ADQACAAsADQAGAAcABwAKAAAABwAGAAoADAAEAA4ACwAMAAMAAwANAAsADAAOAAMADwAGAA0ACgAGAA8ADQADAA8ACAAOAAQAAwAOAAgACAAPAAMABAAFAAgADwAJAAoACAAJAA8ACQAIAAUAAAAKAAkACQAFAAAA"),
+"lods": [0.00116726, PackedByteArray("AAABAAIAAwACAAEAAQAEAAMAAgAHAAAABwACAAMAAwAEAAgABAAFAAgAAwAGAAcACQAIAAUACAAJAAMACQAFAAAACgAGAAMAAwAJAAoABwAGAAoAAAAKAAkABwAKAAAA"), 0.00180274, PackedByteArray("AAABAAIAAwACAAEAAAACAAMAAQAEAAMABAAFAAMAAAAGAAUABQAGAAMAAwAGAAAA")],
+"name": "Non Metallic",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("lxTTukZiN7qmGI64Wo32uiRJEDunGI645vuQuoptBDtB8sU694h7OkSBFjt4H8w6Fl+sOls/JjumGI640lErO5QPKbqnGI640kW/uehEszlWezI7w6A9uhxQkDm94iU79lTeOk2+HToT+t065WzEOv+Nibi6Ksc6aCPPuZbVprg0OSI7WD3hudRoGDsy0r86mgRiOrEhKDubNaI6gyS3uRsoDDs0/fw6pI+XOri+GTtw0aE6mx+xOgHuIzoNOwg7")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_i0e1i"]
+resource_name = "PM3D_Sphere3D_1_002"
+_surfaces = [{
+"aabb": AABB(-0.00188104, -0.000699554, -6.77568e-05, 0.00449517, 0.00326504, 0.00279117),
+"attribute_data": PackedByteArray("hkAJP3gp7j7kyhc/pEe0PsILIz+AHbY+wExQP+AWqD74aVA/xAedPj+iVz8S2KM+PBFQP16crD5Sf1Y/XHGwPvSmcD9K7so+8QlgP9KTsj7ilAs/5BPXPnLqGD+gtKY+0xgZPyrslT6KfzQ/9A6qPlI1YD9k0bQ+g/9hP8ICsj6KZWA/IOSjPlbFYD8KJqk+4TovP2j8oz6f3wQ//luyPtYrCT++1bY+MCkqP9yIlT4PhyI/lj6dPuglJD9we7I+4usYP94drz7l5xg/gHGoPurwIT9ItZ4+/LJfP5wTqT7Jilc/RletPkADVz9sFa4+HfBVPwhZoT6Eo1U/RgyiPphWIT8EF70+KJsgP2JlsD4hgig/YE20PmiOJT/KfL4+"),
+"format": 34359742487,
+"index_count": 78,
+"index_data": PackedByteArray("AAABAAIAAgAKAAAACwAMAA0ADQAWAAsAFwAYABkAGQAaABcADgAPAAgADgAJAA8ADwAJABsAHAAJAA4AGwAQAA8ADgAHABwAEQAQABsAEAARAAQAEQAbAAUAHAAHAB0ABQAcAB0ABwAGAB0ABQAeABEAHQAfAAUAHwAeAAUAHwADAB4AIAAhACIAIgAjACAAEgATABQAFAAVABIA"),
+"lods": [0.00116726, PackedByteArray("AAABAAIAAgAKAAAACwAMAA0ADgAPAAgADgAJAA8ADwAJAAUABQAJAA4ADgAHAAUABQAHAAYABgADAAUABQAQAA8ABQADABEAEQAQAAUAEAARAAQAEgATABQAFAAVABIA"), 0.00180274, PackedByteArray("AAABAAIAAwAEAAUABgADAAUABQAHAAYACAAHAAUABAAJAAUABQAJAAgACAAJAAQA")],
+"material": SubResource("StandardMaterial3D_5664i"),
+"name": "Non Metallic",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("lxTTukZiN7qmGI64Wo32uiRJEDunGI645vuQuoptBDtB8sU6Fl+sOls/JjumGI640lErO5QPKbqnGI6494h7OkSBFjt4H8w6Wo32uiRJEDunGI645vuQuoptBDtB8sU6lxTTukZiN7qmGI640kW/uehEszlWezI7w6A9uhxQkDm94iU7Fl+sOls/JjumGI640lErO5QPKbqnGI649lTeOk2+HToT+t06w6A9uhxQkDm94iU7aCPPuZbVprg0OSI75WzEOv+Nibi6Ksc69lTeOk2+HToT+t065WzEOv+Nibi6Ksc60lErO5QPKbqnGI64lxTTukZiN7qmGI64aCPPuZbVprg0OSI7pI+XOri+GTtw0aE6WD3hudRoGDsy0r86Wo32uiRJEDunGI64Fl+sOls/JjumGI64mgRiOrEhKDubNaI6mx+xOgHuIzoNOwg7gyS3uRsoDDs0/fw6WD3hudRoGDsy0r86pI+XOri+GTtw0aE6mgRiOrEhKDubNaI6gyS3uRsoDDs0/fw694h7OkSBFjt4H8w6mx+xOgHuIzoNOwg70kW/uehEszlWezI7hBeQioQFgQaHIZGO+5ROvxEmuJKYBIcKUawhxfM+A9IRrxFedUHqugGiUbMOuZKl4l1uxJG/JsbQVn2pNLCatlggflPTyPSN3XkXtfNhmqNRF3+IBwZZB0jN9Z4oh/xcTs3vn2GQ3J4wzZ+f6IesXDQdKl1Uo7OOQYm0C3IExI80o+VSMDuCmHjAVXtpSLy5dJ4tLcHbDtGaq4gp6TCUU8KWuhYg5M/KEanvMRvSu9WIzQifYYfjXORxifBju1nDXHIr8S7PjsSKcS3woaXlwYpxLfDeSzm8daSOdKhXk5clc7O1io6JohFnl8QMjqOuJK+bsj2kRKSYmn/F55VvrAGVD5/Vl7KYAZUPnw6k1ZsBlQ+fHJX/lwGVD58fii2V")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_nlnsx")
+
+[node name="Rock2" type="Node3D"]
+
+[node name="Rock2" type="Node3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="Rock2" type="MeshInstance3D" parent="Rock2"]
+transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4dwsp")
+mesh = SubResource("ArrayMesh_i0e1i")
+skeleton = NodePath("")
